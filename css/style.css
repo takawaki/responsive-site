@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+.text-center {
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block; }
+  a:hover {
+    cursor: pointer; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #EEEEEE; }
+
+header {
+  background: url(../images/mainVisual.jpg) no-repeat center center;
+  background-size: cover;
+  height: 250px;
+  position: relative; }
+  header div {
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    width: 100%;
+    top: 35%; }
+    header div h2 {
+      font-size: 3rem;
+      color: #000; }
+    header div p {
+      font-size: 1.5rem;
+      margin-top: 5px; }
+
+#main section {
+  margin: 40px auto;
+  font-size: 1.4rem; }
+  #main section h2 {
+    font-size: 3rem;
+    margin: 25px auto; }
+
+.works-box {
+  border: 1px solid #dedede;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  width: 90%; }
+  .works-box h3 {
+    font-size: 2rem;
+    padding: 10px 0;
+    background-color: #4157FB;
+    color: #fff; }
+  .works-box p {
+    line-height: 1.6;
+    padding: 20px 10px; }
+
+section span {
+  display: block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #D6AF03;
+  width: 160px;
+  margin: 0 auto 20px auto; }
+  section span a {
+    padding: 10px; }
+    section span a:hover {
+      opacity: .8; }
+
+section#contact {
+  background: url("../images/footerImg.jpg") no-repeat center center;
+  background-size: cover;
+  margin-bottom: 0;
+  padding: 0px 0 10px;
+  color: #fff; }
+  section#contact div {
+    padding: 40px 0; }
+    section#contact div p {
+      padding: 20px 10px;
+      font-size: 1.8rem; }
+    section#contact div span {
+      color: #000;
+      margin-top: 5px; }
+  section#contact small {
+    font-size: 1.2rem; }
+
+@media (min-width: 768px) {
+  header {
+    height: 500px;
+    background: url(../images/mainVisual.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative; }
+    header div {
+      padding: 45px 0;
+      background: rgba(255, 255, 255, 0.6);
+      position: absolute;
+      top: 33%;
+      left: 30%;
+      width: 45%; }
+      header div h2 {
+        font-size: 4rem;
+        color: #000; }
+      header div p {
+        font-size: 2rem;
+        margin-top: 10px; }
+
+  #container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: spase-between;
+    width: 90%;
+    margin: 25px auto; }
+
+  .works-box {
+    border: 1px solid #dedede;
+    width: 100%;
+    margin-right: 20px;
+    font-size: 1.4rem; }
+    .works-box:last-child {
+      margin-right: 0; }
+
+  section#contact {
+    background: url("../images/footerImg.jpg") no-repeat bottom center;
+    background-size: cover; } }
+
+/*# sourceMappingURL=style.css.map */

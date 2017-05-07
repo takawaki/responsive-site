@@ -1,0 +1,224 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@charset "utf-8";
+
+//基本設定
+$basefont:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+
+$baseColor:#EEEEEE;
+$subColor:#4157FB;
+$accentColor:#D6AF03;
+
+.text-center{
+    text-align:center;
+     
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+    &:hover{
+        cursor:pointer;
+    }
+}
+
+
+
+html{
+    font-size:10px;
+}
+
+body{
+   
+    font-family:$basefont;
+    background-color: $baseColor;
+}
+
+// 共通設定
+
+header{
+      background:url(../images/mainVisual.jpg) no-repeat center center;
+      background-size:cover;
+      height:250px;
+      position:relative;
+      div{
+        padding:15px 0;
+        background:rgba(255,255,255,.6);
+       
+        position:absolute;
+        width:100%;
+        
+        top:35%;
+          h2{
+              font-size:3rem;
+              
+              color:#000;
+             
+          }
+          p{
+              font-size:1.5rem;
+              margin-top:5px;
+          }
+      }
+      
+}
+
+#main{
+   
+    section{
+         margin:40px auto;
+         font-size:1.4rem;
+        h2{
+            font-size:3rem;
+             margin:25px auto;
+        }
+    }
+}
+
+
+
+.works-box{
+    border:1px solid #dedede;
+    max-width:400px;
+   margin:0 auto 20px auto;
+    
+    width:90%;
+    
+        h3{
+            font-size:2rem;
+            padding:10px 0;
+            background-color: $subColor;
+            color:#fff;
+        
+        }
+        p{
+            line-height:1.6;
+            padding:20px 10px;
+        }
+       
+    
+}
+
+section span{
+     
+            display:block;
+            @include border-radius(5px);
+            background-color: $accentColor;
+            width:160px;
+            margin:0 auto 20px auto;
+            a{
+               padding:10px;
+               &:hover{
+                   opacity:.8;
+               }
+            }
+       
+}
+
+section#contact{
+    background:url("../images/footerImg.jpg") no-repeat center center;
+    background-size:cover;
+    margin-bottom:0;
+    padding:0px 0 10px;
+    color:#fff;
+    div{
+    
+    padding:40px 0;
+        p{
+        padding:20px 10px;
+        font-size:1.8rem;
+        }
+        span{
+        color:#000;
+        margin-top:5px;
+        
+        }
+    }  
+    
+    small{
+        font-size:1.2rem;
+    }
+   
+}
+
+
+//PC表示設定
+@media (min-width:768px){
+    
+    header{
+      height:500px;
+      background:url(../images/mainVisual.jpg) no-repeat center center;
+      background-size:cover;
+      
+      position:relative;
+      div{
+        padding:45px 0;
+        background:rgba(255,255,255,.6);
+       
+        position:absolute;
+        top:33%;
+        left:30%;
+        width:45%;
+        
+          h2{
+              font-size:4rem;
+              
+              color:#000;
+             
+          }
+           p{
+              font-size:2rem;
+              margin-top:10px;
+          }
+      }
+      
+}
+       
+
+#container{
+    @include display-flex;
+    justify-content:spase-between;
+    width:90%;
+    margin:25px auto;
+    
+}
+
+.works-box{
+    border:1px solid #dedede;
+   width:100%;
+    margin-right:20px;
+    font-size:1.4rem;
+    &:last-child{
+        margin-right:0;
+    }
+    // @include flex(1);
+    
+        // h3{
+        //     font-size:2rem;
+        //     padding:10px 0;
+        //     background-color: $subColor;
+        //     color:#fff;
+        
+        // }
+        // p{
+        //     line-height:1.6;
+        //     padding:20px 10px;
+        // }
+    
+}
+
+section#contact{
+    background:url("../images/footerImg.jpg") no-repeat bottom center;
+    background-size:cover;
+    
+   
+   
+}
+
+}
+
+
+
+
+
